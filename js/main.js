@@ -82,37 +82,4 @@ window.addEventListener('DOMContentLoaded', () => {
                 closeModal();
             }
         });
-
-        // carousel
-
-        const slides = document.querySelectorAll('.phone__slide'),
-              prev = document.querySelector('.phone__arrows-prev'),
-              next = document.querySelector('.phone__arrows-next');
-
-        let slideIndex = 1;
-
-        showSlides(slideIndex - 1);
-
-        function showSlides(n) {
-            if(n > slides.length) {
-                slideIndex = 1;
-            }
-
-            if(n < 1) {
-                slideIndex = slides.length;
-            }
-
-            slides.forEach(item => item.style.display = 'none');
-            slides[slideIndex - 1].style.display = 'block';
-        }
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
-        prev.addEventListener('click', () => {
-            plusSlides(-1);
-        });
-
-        next.addEventListener('click', () => {
-            plusSlides(1);
-        });    
 })

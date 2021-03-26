@@ -1,3 +1,10 @@
+$breakpointXXL: 1399px;
+$breakpointXL: 1199px;
+$breakpointL: 991px;
+$breakpointM: 767px;
+$breakpointS: 575px;
+$breakpointXS: 100%;
+
 * {
     font-family: 'Museo Sans', sans-serif;
     box-sizing: border-box;
@@ -11,6 +18,7 @@
 .container {
     max-width: 1320px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
 h1 {
@@ -29,9 +37,33 @@ h1 {
 }
 
 
-@media (max-width: 1400px) {
+@media (max-width: $breakpointXXL) {
     .container {
         max-width: 1140px;
+    }
+}
+
+@media (max-width: $breakpointXL) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (max-width: $breakpointL) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (max-width: $breakpointM) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (max-width: $breakpointS) {
+    .container {
+        max-width: 100%;
     }
 }
 

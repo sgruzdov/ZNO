@@ -82,5 +82,45 @@
         color: #fff;
         margin: 0 13px;
     }
+}
 
+@media (max-width: $breakpointL) {
+    .menu {
+        .container {
+            max-width: 100%;
+        }
+    }
+}
+
+@media (max-width: $breakpointM) {
+    .menu {
+        &_logo {
+            display: none;
+        }
+
+        &_list {
+            margin-left: 0;
+        }
+    }
+}
+
+@media (max-width: 630px) {
+    .menu {
+        &_logo {
+            display: unset;
+            margin-right: 30px;
+        }
+
+        &_list {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 374px) {
+    .menu {
+        &_logo {
+            margin-right: 19px;
+        }
+    }
 }

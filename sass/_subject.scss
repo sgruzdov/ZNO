@@ -66,3 +66,57 @@
         }
     }
 }
+
+
+@media (max-width: $breakpointL) {
+    .subject {
+        &__items {
+            &_first .item,
+            &_second .item {
+                width: 100%;
+            }
+
+            &_first,
+            &_second {
+                margin-right: 0;
+                width: 50%;
+            }
+
+            &_first {
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
+@media (max-width: $breakpointM) {
+    .subject {
+        &__items {
+            flex-direction: column;
+
+            &_first,
+            &_second {
+                margin-right: 0;
+                width: 100%;
+
+                .item {
+                    max-width: 300px;
+                    margin: 0 auto 30px auto;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $breakpointS) {
+    .subject {
+        h1 {
+            font-size: 25px;
+        }
+
+        h3 {
+            font-size: 17px;
+            margin: 10px 0 50px 0;
+        }
+    }
+}

@@ -12,6 +12,7 @@
 
         &_descr {
             font-size: 20px;
+            text-align: center;
         }
 
         &_number {
@@ -75,6 +76,32 @@
             &:nth-child(2n-1) {
                 background-color: #f9f7f7;
             }
+        }
+    }
+}
+
+
+@media (max-width: $breakpointXL) {
+    .use {
+        &__items {
+            padding: 0;
+        }
+    }
+}
+
+@media (max-width: $breakpointM) {
+    .use {
+        h1 {
+            margin-bottom: 50px;
+        }
+        
+        &__items {
+            flex-direction: column;
+        }
+
+        &__first_item,
+        &__second_item {
+            border-radius: 40px;
         }
     }
 }

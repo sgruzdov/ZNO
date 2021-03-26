@@ -22,7 +22,7 @@
         justify-content: space-between;
         align-items: center;
         margin-bottom: 100px;
-        width: 400px;
+        max-width: 400px;
         height: 50px;
         border-radius: 20px;
         background-color: white;
@@ -81,7 +81,7 @@
         }
 
         &_descr {
-            width: 600px;
+            max-width: 600px;
             font-size: 20px;
 
             li {
@@ -97,6 +97,50 @@
         
         &_img {
             box-shadow: 0 0 44px -10px #f3f709;
+        }
+    }
+}
+
+
+@media (max-width: $breakpointL) {
+    .about {
+        &__content {
+            grid-template-columns: 1fr;
+
+            &_main {
+                text-align: center;
+                margin-top: 30px;
+            }
+
+            &_maindescr {
+                width: 100%;
+            }
+
+            &_descr {
+                ul {
+                    text-align: left;
+                    padding-left: 15px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $breakpointS) {
+    .about {
+        h1 {
+            font-size: 25px;
+        }
+
+        h3 {
+            font-size: 17px;
+        }
+
+        &__content {
+            &_img {
+                width: 300px;
+                height: 300px;
+            }
         }
     }
 }
