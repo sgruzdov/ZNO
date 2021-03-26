@@ -8,6 +8,7 @@
         width: 400px;
         border-radius: 50%;
         height: 380px;
+        object-fit: cover;
         // margin-right: 150px;
     }
 
@@ -39,9 +40,11 @@
         justify-content: center;
         background-color: white;
         border-radius: 20px;
+        transition: .3s background;
 
         &:hover {
-            box-shadow: 5px 0 70px blue;
+            // box-shadow: 5px 0 70px blue;
+            background: #eee;
         }
     }
 
@@ -53,6 +56,9 @@
         display: flex;
         align-items: center;
         text-align: center;
+        pointer-events: none !important;
+        opacity: 1;
+        display: grid;
     }
 
     &__content {

@@ -1,0 +1,104 @@
+.first-timer-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: relative;
+}
+
+.main_timer {
+    // background: #2c3e50;
+    background: url('../img/background/timer.jpeg') center center/cover no-repeat;
+    background-attachment: fixed;
+    color: #fff;
+    padding: 100px 0;
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, .6);
+    }
+}
+
+.main_timer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 10;
+    position: relative;
+}
+
+.first-timer-section-title {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0 0 40px 0;
+    text-align: center;
+    color: #fff;
+}
+
+.main_timer .button {
+    margin-top: 30px;
+}
+
+.first-timer-section-step {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+    min-width: 90px;
+}
+
+.first-timer-section-break {
+    margin: -2px 15px 0 15px;
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.first-timer-section-count {
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.first-timer-section-type {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+
+@media (max-width: 767px) {
+    .first-timer-section-title {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 575px) {
+    .first-timer-section-count,
+    .first-timer-section-break {
+        font-size: 30px;
+    }
+    .first-timer-section-break {
+        margin: -2px 0 0 0;
+    }
+    .first-timer-section-step {
+        min-width: 71px;
+    }
+    .first-timer-section-type {
+        font-size: 16px;
+    }
+}

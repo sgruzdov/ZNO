@@ -15,10 +15,10 @@
             <div class="container menu_wrap">
                 <a href="/" class="menu_logo"><img src="img/logo/zno.jpg" alt="ZNO" /></a>
                 <div class="menu_list">
-                    <a href="#" class="menu_item active">Головна</a>
-                    <a href="#" class="menu_item">Предмети</a>
-                    <a href="#" class="menu_item">Кроки</a>
-                    <a href="#" class="menu_item">Відгуки</a>
+                    <a href="#main" class="menu_item active">Головна</a>
+                    <a href="#predmet" class="menu_item">Предмети</a>
+                    <a href="#steps" class="menu_item">Кроки</a>
+                    <a href="#comments" class="menu_item">Відгуки</a>
                 </div>
                 <div class="menu_call">
                     <button data-modal class="button button_menu">Зворотнiй зв'язок</button>
@@ -26,7 +26,7 @@
             </div>
         </div>
 
-        <section class="promo">
+        <section class="promo" id="main">
             <div class="container">
                 <div class="promo_main">
                     <div class="promo_text">
@@ -78,7 +78,7 @@
             </div>
         </section>
 
-        <section class="subject">
+        <section class="subject" id="predmet">
             <div class="container">
                 <h1>Почни свій шлях до 180+ балів на ЗНО зараз!</h1>
                 <h3>Обирай предмет, залишай заявку та починай навчання</h3>
@@ -154,7 +154,7 @@
             </div>
         </section>
 
-        <section class="about">
+        <section class="about" id="steps">
             <div class="container">
                 <h1>З нами навчаються учнi зi всiєї Україны</h1>
                 <h3 class="about__h3">
@@ -292,7 +292,79 @@
             </div>
         </section>
 
-        <section class="phone">
+        <div class="main_timer">
+            <div class="container">
+                <p class="first-timer-section-title">Отримайте знижку 15%</p>
+                <div class="first-timer-section">
+                     <div class="first-timer-section-step">
+                         <p class="first-timer-section-count" data-value="days">0</p>
+                         <span class="first-timer-section-type" data-type="days">днiв</span>
+                     </div>
+                     <div class="first-timer-section-break">:</div>
+                     <div class="first-timer-section-step">
+                         <p class="first-timer-section-count" data-value="hours">12</p>
+                         <span class="first-timer-section-type" data-type="hours">годин</span>
+                     </div>
+                     <div class="first-timer-section-break">:</div>
+                     <div class="first-timer-section-step">
+                         <p class="first-timer-section-count" data-value="minutes">0</p>
+                         <span class="first-timer-section-type" data-type="minutes">хвилин</span>
+                     </div>
+                     <div class="first-timer-section-break">:</div>
+                     <div class="first-timer-section-step">
+                         <p class="first-timer-section-count" data-value="seconds">0</p>
+                         <span class="first-timer-section-type" data-type="seconds">секунд</span>
+                     </div>
+                </div>
+                <a href="#" data-modal class="button button_menu" data-option="button">Забрати знижку</a>
+             </div>
+        </div>
+
+
+        <section class="support">
+            <div class="container">
+                <h1>Підтримка куратора та викладача 24/7/365</h1>
+                <div class="support__content">
+                    <div class="support__descr">
+                        <div class="support__descr_subheader">
+                            Чим тобі допоможе куратор та викладач?
+                        </div>
+                        <ul class="support__list">
+                            <li><span>Буде давати завдання затвердженні МОН по ЗНО</span></li>
+                            <li>
+                                <span
+                                    >Перевіряти домашні завдання і давати детальний зворотній
+                                    зв'язок з посиланням на критерії перевірки</span
+                                >
+                            </li>
+                            <li>
+                                <span
+                                    >Підтрімувати тебе в складні мементи навчання. Кожен наш куратор
+                                    щиро хоче тобі допомогти отримати відмінний результат!</span
+                                >
+                            </li>
+                            <li>
+                                <span
+                                    >Відповідати на твої запитання 24/7 в
+                                    Viber/Telegram/Messenger.</span
+                                >
+                            </li>
+                            <li>
+                                <span
+                                    >Зідзвонюватись з тобою і допомагати в виконанні домашніх
+                                    завдань.</span
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="support__img">
+                        <img src="img/support/woman.jpg" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="phone" id="comments">
             <div class="container">
                 <div class="phone__content">
                     <div class="phone__message">
@@ -340,50 +412,6 @@
             </div>
         </section>
 
-        <section class="support">
-            <div class="container">
-                <h1>Підтримка куратора та викладача 24/7/365</h1>
-                <div class="support__content">
-                    <div class="support__descr">
-                        <div class="support__descr_subheader">
-                            Чим тобі допоможе куратор та викладач?
-                        </div>
-                        <ul class="support__list">
-                            <li><span>Буде давати завдання затвердженні МОН по ЗНО</span></li>
-                            <li>
-                                <span
-                                    >Перевіряти домашні завдання і давати детальний зворотній
-                                    зв'язок з посиланням на критерії перевірки</span
-                                >
-                            </li>
-                            <li>
-                                <span
-                                    >Підтрімувати тебе в складні мементи навчання. Кожен наш куратор
-                                    щиро хоче тобі допомогти отримати відмінний результат!</span
-                                >
-                            </li>
-                            <li>
-                                <span
-                                    >Відповідати на твої запитання 24/7 в
-                                    Viber/Telegram/Messenger.</span
-                                >
-                            </li>
-                            <li>
-                                <span
-                                    >Зідзвонюватись з тобою і допомагати в виконанні домашніх
-                                    завдань.</span
-                                >
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="support__img">
-                        <img src="img/support/woman.jpg" />
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
         <!-- <section class="packages">
             <div class="container">
                 <div class="packages__wrapper">
@@ -425,5 +453,9 @@
             </div>
         </div>
         <script src="js/main.js"></script>
+        <script src="js/timer.js"></script>
+        <script>
+            new Timer('.main_timer')
+        </script>
     </body>
 </html>

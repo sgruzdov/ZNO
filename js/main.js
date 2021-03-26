@@ -1,4 +1,6 @@
 window.addEventListener('DOMContentLoaded', () => {
+
+
     const tabs = document.querySelectorAll('.about__tab'),
           tabsContent = document.querySelectorAll('.about__content'),
           tabsParent = document.querySelector('.about__tabs');
@@ -100,4 +102,5 @@ window.addEventListener('DOMContentLoaded', () => {
         next.addEventListener('click', () => {
             plusSlides(1);
         });    
+
 })
