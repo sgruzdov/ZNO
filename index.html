@@ -5,6 +5,12 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+        <link
+            rel="stylesheet"
+            href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+            integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+            crossorigin="anonymous"
+        />
         <link rel="stylesheet" href="./css/fonts.css" />
         <link rel="stylesheet" href="./css/style.min.css" />
 
@@ -15,7 +21,7 @@
             <div class="container menu_wrap">
                 <a href="/" class="menu_logo"><img src="img/logo/zno.jpg" alt="ZNO" /></a>
                 <div class="menu_list">
-                    <a href="#main" class="menu_item active">Головна</a>
+                    <a href="#main" class="menu_item">Головна</a>
                     <a href="#predmet" class="menu_item">Предмети</a>
                     <a href="#steps" class="menu_item">Кроки</a>
                     <a href="#comments" class="menu_item">Відгуки</a>
@@ -296,30 +302,31 @@
             <div class="container">
                 <p class="first-timer-section-title">Отримайте знижку 15%</p>
                 <div class="first-timer-section">
-                     <div class="first-timer-section-step">
-                         <p class="first-timer-section-count" data-value="days">0</p>
-                         <span class="first-timer-section-type" data-type="days">днiв</span>
-                     </div>
-                     <div class="first-timer-section-break">:</div>
-                     <div class="first-timer-section-step">
-                         <p class="first-timer-section-count" data-value="hours">12</p>
-                         <span class="first-timer-section-type" data-type="hours">годин</span>
-                     </div>
-                     <div class="first-timer-section-break">:</div>
-                     <div class="first-timer-section-step">
-                         <p class="first-timer-section-count" data-value="minutes">0</p>
-                         <span class="first-timer-section-type" data-type="minutes">хвилин</span>
-                     </div>
-                     <div class="first-timer-section-break">:</div>
-                     <div class="first-timer-section-step">
-                         <p class="first-timer-section-count" data-value="seconds">0</p>
-                         <span class="first-timer-section-type" data-type="seconds">секунд</span>
-                     </div>
+                    <div class="first-timer-section-step">
+                        <p class="first-timer-section-count" data-value="days">0</p>
+                        <span class="first-timer-section-type" data-type="days">днiв</span>
+                    </div>
+                    <div class="first-timer-section-break">:</div>
+                    <div class="first-timer-section-step">
+                        <p class="first-timer-section-count" data-value="hours">12</p>
+                        <span class="first-timer-section-type" data-type="hours">годин</span>
+                    </div>
+                    <div class="first-timer-section-break">:</div>
+                    <div class="first-timer-section-step">
+                        <p class="first-timer-section-count" data-value="minutes">0</p>
+                        <span class="first-timer-section-type" data-type="minutes">хвилин</span>
+                    </div>
+                    <div class="first-timer-section-break">:</div>
+                    <div class="first-timer-section-step">
+                        <p class="first-timer-section-count" data-value="seconds">0</p>
+                        <span class="first-timer-section-type" data-type="seconds">секунд</span>
+                    </div>
                 </div>
-                <a href="#" data-modal class="button button_menu" data-option="button">Забрати знижку</a>
-             </div>
+                <a href="#" data-modal class="button button_menu" data-option="button"
+                    >Забрати знижку</a
+                >
+            </div>
         </div>
-
 
         <section class="support">
             <div class="container">
@@ -412,6 +419,23 @@
             </div>
         </section>
 
+        <footer class="footer">
+            <div class="container">
+                <div class="footer_social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+                <div class="footer_list">
+                    <a href="#main">Головна</a>
+                    <a href="#predmet">Предмети</a>
+                    <a href="#steps">Кроки</a>
+                    <a href="#comments">Відгуки</a>
+                </div>
+                <div class="footer_copy">© 2021 ZNO. All rights reserved</div>
+            </div>
+        </footer>
+
         <!-- <section class="packages">
             <div class="container">
                 <div class="packages__wrapper">
@@ -452,10 +476,16 @@
                 </form>
             </div>
         </div>
+
+        <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"
+        ></script>
         <script src="js/main.js"></script>
         <script src="js/timer.js"></script>
         <script>
-            new Timer('.main_timer')
+            new Timer('.main_timer');
         </script>
     </body>
 </html>

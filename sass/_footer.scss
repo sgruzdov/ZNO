@@ -1,0 +1,52 @@
+.footer {
+    padding: 20px 0;
+    background: #34475a;
+    color: #fff;
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        grid-gap: 25px;
+    }
+
+    &_social {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        grid-gap: 20px;
+
+        a {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #b2bec3;
+            background: #2c3e50;
+            transition: .3s ease color;
+
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+
+    &_copy {
+        color: #b2bec3;
+        text-align: center;
+    }
+
+    &_list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        a {
+            font-size: 18px;
+            color: #fff;
+            margin: 0 13px;
+        }
+    }
+}

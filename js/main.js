@@ -1,5 +1,18 @@
 window.addEventListener('DOMContentLoaded', () => {
 
+    $(".menu_list").on("click","a", function (event) {
+        event.preventDefault()
+        const id  = $(this).attr('href'),
+              top = $(id).offset().top
+        $('body,html').animate({scrollTop: top}, 800)
+    })
+
+    $(".footer_list").on("click","a", function (event) {
+        event.preventDefault()
+        const id  = $(this).attr('href'),
+              top = $(id).offset().top
+        $('body,html').animate({scrollTop: top}, 800)
+    })
 
     const tabs = document.querySelectorAll('.about__tab'),
           tabsContent = document.querySelectorAll('.about__content'),
@@ -102,5 +115,4 @@ window.addEventListener('DOMContentLoaded', () => {
         next.addEventListener('click', () => {
             plusSlides(1);
         });    
-
 })

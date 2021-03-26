@@ -79,17 +79,8 @@
 
     &_item {
         font-size: 17px;
-        color: #95a5a6;
+        color: #fff;
         margin: 0 13px;
-        transition: .3s color;
-
-        &:hover {
-            color: #fff;
-        }
-
-        &.active {
-            color: #fff;
-        }
     }
 
 }
