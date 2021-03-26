@@ -1,0 +1,96 @@
+.about {
+    background: #2c3e50;
+    // background: linear-gradient(180deg, rgba(0, 2, 32, 0) 0%, #000220 100%), #000220;
+    color: white;
+    padding: 60px 0 60px 0;
+
+    &__content_img {
+        width: 400px;
+        border-radius: 50%;
+        height: 380px;
+        // margin-right: 150px;
+    }
+
+    &__h3 {
+        text-align: center;
+        font-size: 30px;
+    }
+
+    &__tabs {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 100px;
+        width: 400px;
+        height: 50px;
+        border-radius: 20px;
+        background-color: white;
+        color: black;
+        margin: 40px auto 70px auto;
+        cursor: pointer;
+    }
+
+    &__tab {
+        width: 133px;
+        text-align: center;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        border-radius: 20px;
+
+        &:hover {
+            box-shadow: 5px 0 70px blue;
+        }
+    }
+
+    &__tab_active {
+        width: 133px;
+        border-radius: 20px;
+        background-color: yellow;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+
+    &__content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+
+        &_maindescr {
+            margin-bottom: 50px;
+            width: 450px;
+            font-weight: 700;
+            font-size: 25px;
+            color: #29b2e6;
+            // text-shadow: 0 0 35px rgba(146, 225, 255, 0.54);
+
+            img {
+                width: 50px;
+                margin-bottom: -13px;
+            }
+        }
+
+        &_descr {
+            width: 600px;
+            font-size: 20px;
+
+            li {
+                list-style-type: decimal;
+                margin-bottom: 10px;
+            }
+        }
+
+        &_main {
+            display: flex;
+            align-items: center;
+        }
+        
+        &_img {
+            box-shadow: 0 0 44px -10px #f3f709;
+        }
+    }
+}

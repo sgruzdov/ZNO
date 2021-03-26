@@ -8,36 +8,422 @@
         <link rel="stylesheet" href="./css/fonts.css" />
         <link rel="stylesheet" href="./css/style.min.css" />
 
-        <title>Document</title>
+        <title>Підготовчий центр ЗНО</title>
     </head>
     <body>
-        <header>
-            <nav>
-                <div class="container">
-                    <ul class="menu">
-                        <li class="menu_item">Главная</li>
-                        <li class="menu_item">Предметы</li>
-                        <li class="menu_item">Шаги</li>
-                        <li class="menu_item">Отзывы</li>
-                    </ul>
+        <div class="menu">
+            <div class="container menu_wrap">
+                <a href="/" class="menu_logo"><img src="img/logo/zno.jpg" alt="ZNO" /></a>
+                <div class="menu_list">
+                    <a href="#" class="menu_item active">Головна</a>
+                    <a href="#" class="menu_item">Предмети</a>
+                    <a href="#" class="menu_item">Кроки</a>
+                    <a href="#" class="menu_item">Відгуки</a>
                 </div>
-            </nav>
+                <div class="menu_call">
+                    <button data-modal class="button button_menu">Зворотнiй зв'язок</button>
+                </div>
+            </div>
+        </div>
 
-            <div class="subheader">
-                <div class="container">
-                    <div class="subheader_offer">
-                        <div class="subheader_logo">
-                            <img src="img/zno.jpg" alt="ZNO" />
-                            <div class="subheader_descr">Підготовчий центр ЗНО</div>
+        <section class="promo">
+            <div class="container">
+                <div class="promo_main">
+                    <div class="promo_text">
+                        <h1 class="promo__header">
+                            Отримай <span>180+ балів</span> на ЗНО 2021
+                            <span>не виходячи з дому</span>
+                        </h1>
+                        <div class="promo_list">
+                            <ul class="promo_list-first">
+                                <li>
+                                    <span
+                                        >Гарантовано отримай 180+ балів на ЗНО за договором
+                                        оферти233</span
+                                    >
+                                </li>
+                                <li>
+                                    <span
+                                        >За допомогою викладачів з різних куточків України, вчителі
+                                        вищої ланки</span
+                                    >
+                                </li>
+                            </ul>
+                            <ul class="promo_list-second">
+                                <li>
+                                    <span>Від теорії до теорії разом з викладачами практиками</span>
+                                </li>
+                                <li>
+                                    <span
+                                        >За рік ви зекономите понад 20.000 грн, а ваша дитина
+                                        отримує відмінний результат</span
+                                    >
+                                </li>
+                            </ul>
                         </div>
-                        <div class="number">
-                            <div class="number_descr">Телефонуйте нам щодня</div>
-                            <a href="tel:380972071040" class="phone"> +380972071040</a>
-                        </div>
-                        <button data-modal class="subheader_btn">Зворотнiй зв'язок</button>
+                    </div>
+                    <div class="form promo__form">
+                        <div class="promo__form_descr">Залиш свої контактнi даннi</div>
+                        <form id="promo-form" class="feed-form" action="#">
+                            <input name="name" placeholder="Ваше iм'я" type="text" />
+                            <input name="phone" placeholder="Ваш телефон" />
+
+                            <button class="button button_submit">Отримати консультацiю</button>
+                            <div class="promo__form_left">
+                                *<span>нас обрали 3159 абітурієнтiв за 2019-2020 рiк</span>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
-        </header>
+        </section>
+
+        <section class="subject">
+            <div class="container">
+                <h1>Почни свій шлях до 180+ балів на ЗНО зараз!</h1>
+                <h3>Обирай предмет, залишай заявку та починай навчання</h3>
+                <div class="subject__items">
+                    <div class="subject__items_first">
+                        <a data-modal class="item">
+                            <img class="item__img" src="icons/subjects/biolog.png" />
+                            <div class="item__descr">Біологія</div>
+                            <div class="item__arrow">
+                                <img class="item__arrow_img" src="img/row/arrow_right.png" />
+                            </div>
+                        </a>
+
+                        <a data-modal class="item">
+                            <img class="item__img" src="icons/subjects/english.png" />
+                            <div class="item__descr">Англійська мова</div>
+                            <div class="item__arrow">
+                                <img class="item__arrow_img" src="img/row/arrow_right.png" />
+                            </div>
+                        </a>
+
+                        <a data-modal class="item">
+                            <img class="item__img" src="icons/subjects/geograph.png" />
+                            <div class="item__descr">Географія</div>
+                            <div class="item__arrow">
+                                <img class="item__arrow_img" src="img/row/arrow_right.png" />
+                            </div>
+                        </a>
+
+                        <a data-modal class="item">
+                            <img class="item__img" src="icons/subjects/him.png" />
+                            <div class="item__descr">Хімія</div>
+                            <div class="item__arrow">
+                                <img class="item__arrow_img" src="img/row/arrow_right.png" />
+                            </div>
+                        </a>
+                    </div>
+                    <div class="subject__items_second">
+                        <a data-modal class="item">
+                            <img class="item__img" src="icons/subjects/histor.png" />
+                            <div class="item__descr">Історія України</div>
+                            <div class="item__arrow">
+                                <img class="item__arrow_img" src="img/row/arrow_right.png" />
+                            </div>
+                        </a>
+
+                        <a data-modal class="item">
+                            <img class="item__img" src="icons/subjects/math.png" />
+                            <div class="item__descr">Математика</div>
+                            <div class="item__arrow">
+                                <img class="item__arrow_img" src="img/row/arrow_right.png" />
+                            </div>
+                        </a>
+
+                        <a data-modal class="item">
+                            <img class="item__img" src="icons/subjects/physics.png" />
+                            <div class="item__descr">Фізика</div>
+                            <div class="item__arrow">
+                                <img class="item__arrow_img" src="img/row/arrow_right.png" />
+                            </div>
+                        </a>
+
+                        <a data-modal class="item">
+                            <img class="item__img" src="icons/subjects/ukr.png" />
+                            <div class="item__descr">Українська мова та література</div>
+                            <div class="item__arrow">
+                                <img class="item__arrow_img" src="img/row/arrow_right.png" />
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <button data-modal class="button subject__button">Хочу почати</button>
+            </div>
+        </section>
+
+        <section class="about">
+            <div class="container">
+                <h1>З нами навчаються учнi зi всiєї Україны</h1>
+                <h3 class="about__h3">
+                    Навайся та виконуй домашнi завдання без помилок за три кроки
+                </h3>
+                <div class="about__tabs">
+                    <div class="about__tab">Крок 1</div>
+                    <div class="about__tab">Крок 2</div>
+                    <div class="about__tab about__tab_active">Крок 3</div>
+                </div>
+                <div class="about__content">
+                    <img class="about__content_img" src="img/photo/learn.jpg" />
+                    <div class="about__content_main">
+                        <div class="wrapper">
+                            <div class="about__content_maindescr">
+                                <img src="icons/about/youtube.svg" />
+                                Теорiя та завдання на платформi
+                            </div>
+                            <div class="about__content_descr">
+                                Дивись теорію і завдання від наших викладачів на телефоні,
+                                комп’ютері або планшеті з будь-якого місця.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about__content">
+                    <img class="about__content_img" src="img/photo/hand.jpg" />
+                    <div class="about__content_main">
+                        <div class="wrapper">
+                            <div class="about__content_maindescr">
+                                <img src="icons/about/chek.svg" />
+                                Засвой отриманнi знання тестом
+                            </div>
+                            <div class="about__content_descr">
+                                Після заняття відразу переходь до практичних завдань на реальних
+                                тестах ЗНО та тестах, які розробляли наші викладачі.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about__content">
+                    <img class="about__content_img" src="img/photo/rules.jpg" />
+                    <div class="about__content_main">
+                        <div class="wrapper">
+                            <div class="about__content_maindescr">
+                                <img src="icons/about/review.svg" />
+                                Чому 94% учнів неефективно готуються до ЗНО?
+                            </div>
+                            <div class="about__content_descr">
+                                <ul>
+                                    <li>Не можуть побороти свою лінь</li>
+                                    <li>Постійно відволікаються на заважаючі речі</li>
+                                    <li>Багато хвилюються за результат ЗНО</li>
+                                    <li>Майже завжди утомленні</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="use">
+            <div class="container">
+                <h1>Як навчатися з нами?</h1>
+
+                <div class="use__items">
+                    <div class="use__first">
+                        <div class="use__first_item">
+                            <div class="use__items_round">
+                                <div class="use__items_number">1</div>
+                            </div>
+                        </div>
+                        <div class="use__first_item">
+                            <div class="use__items_descr">
+                                Обирай свій предмет та залишай заявку.
+                            </div>
+                        </div>
+                        <div class="use__first_item">
+                            <div class="use__items_round">
+                                <div class="use__items_number">2</div>
+                            </div>
+                        </div>
+                        <div class="use__first_item">
+                            <div class="use__items_descr">
+                                Разом з менеджером обери<br />
+                                предмети для підготовки до ЗНО
+                            </div>
+                        </div>
+                        <div class="use__first_item">
+                            <div class="use__items_round">
+                                <div class="use__items_number">3</div>
+                            </div>
+                        </div>
+                        <div class="use__first_item">
+                            <div class="use__items_descr">
+                                Закріпленний викладач та куратор,<br />
+                                який буде з тобою 24/7 на зв’язку
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="use__second">
+                        <div class="use__second_item">
+                            <div class="use__items_descr">
+                                Виконуй усі домашні завдання<br />
+                                з викладачем та на платформі
+                            </div>
+                        </div>
+                        <div class="use__second_item">
+                            <div class="use__items_round">
+                                <div class="use__items_number">4</div>
+                            </div>
+                        </div>
+                        <div class="use__second_item">
+                            <div class="use__items_descr">
+                                Закріплюй отримані знання тестовим завданням
+                            </div>
+                        </div>
+                        <div class="use__second_item">
+                            <div class="use__items_round">
+                                <div class="use__items_number">5</div>
+                            </div>
+                        </div>
+                        <div class="use__second_item">
+                            <div class="use__items_descr">Гарантовано отримай +20 балів на ЗНО</div>
+                        </div>
+                        <div class="use__second_item">
+                            <div class="use__items_round">
+                                <div class="use__items_number">6</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="phone">
+            <div class="container">
+                <div class="phone__content">
+                    <div class="phone__message">
+                        <img src="img/phone/message/message1.png" />
+                    </div>
+                    <div class="phone__display-wrapper">
+                        <div class="phone__display">
+                            <img class="phone__display-iphone" src="img/phone/iphone.svg" />
+                        </div>
+                        <div class="phone__slider">
+                            <div class="phone__arrows">
+                                <div class="phone__arrows-prev">
+                                    <img src="icons/slider/prev.png" alt="prev" />
+                                </div>
+                                <div class="phone__arrows-next">
+                                    <img src="icons/slider/next.png" alt="next" />
+                                </div>
+                            </div>
+                            <div class="phone__slides">
+                                <div class="phone__slide">
+                                    <img src="img/slider/first.PNG" />
+                                </div>
+                                <div class="phone__slide">
+                                    <img src="img/slider/second.PNG" />
+                                </div>
+                                <div class="phone__slide">
+                                    <img src="img/slider/third.png" />
+                                </div>
+                                <div class="phone__slide">
+                                    <img src="img/slider/fourth.png" />
+                                </div>
+                                <div class="phone__slide">
+                                    <img src="img/slider/sixth.png" />
+                                </div>
+                                <div class="phone__slide">
+                                    <img src="img/slider/seventh.png" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="phone__message">
+                        <img src="img/phone/message/message2.png" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="support">
+            <div class="container">
+                <h1>Підтримка куратора та викладача 24/7/365</h1>
+                <div class="support__content">
+                    <div class="support__descr">
+                        <div class="support__descr_subheader">
+                            Чим тобі допоможе куратор та викладач?
+                        </div>
+                        <ul class="support__list">
+                            <li><span>Буде давати завдання затвердженні МОН по ЗНО</span></li>
+                            <li>
+                                <span
+                                    >Перевіряти домашні завдання і давати детальний зворотній
+                                    зв'язок з посиланням на критерії перевірки</span
+                                >
+                            </li>
+                            <li>
+                                <span
+                                    >Підтрімувати тебе в складні мементи навчання. Кожен наш куратор
+                                    щиро хоче тобі допомогти отримати відмінний результат!</span
+                                >
+                            </li>
+                            <li>
+                                <span
+                                    >Відповідати на твої запитання 24/7 в
+                                    Viber/Telegram/Messenger.</span
+                                >
+                            </li>
+                            <li>
+                                <span
+                                    >Зідзвонюватись з тобою і допомагати в виконанні домашніх
+                                    завдань.</span
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="support__img">
+                        <img src="img/support/woman.jpg" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- <section class="packages">
+            <div class="container">
+                <div class="packages__wrapper">
+                    <div class="packages__item">
+                        <div class="packages__item-img"></div>
+                        <div class="packages__item-title"></div>
+                        <div class="packages__item-subtitle"></div>
+                        <div class="packages__item-content"></div>
+                    </div>
+
+                    <div class="packages__item">
+                        <div class="packages__item-img"></div>
+                        <div class="packages__item-title"></div>
+                        <div class="packages__item-subtitle"></div>
+                        <div class="packages__item-content"></div>
+                    </div>
+
+                    <div class="packages__item">
+                        <div class="packages__item-img"></div>
+                        <div class="packages__item-title"></div>
+                        <div class="packages__item-subtitle"></div>
+                        <div class="packages__item-content"></div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        <div class="overlay hide">
+            <div class="modal">
+                <div data-close class="modal__close">&times;</div>
+                <div class="modal__subtitle">
+                    Залиш контактні данні та отримай знижку -30% на пiдготовку до ЗНО
+                </div>
+                <form id="promo-form" class="feed-form" action="#">
+                    <input name="name" placeholder="Ваше iм'я" type="text" />
+                    <input name="phone" placeholder="Ваш телефон" />
+
+                    <button class="button button_submit">Отримати консультацiю</button>
+                </form>
+            </div>
+        </div>
+        <script src="js/main.js"></script>
     </body>
 </html>

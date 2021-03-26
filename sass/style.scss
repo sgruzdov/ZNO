@@ -9,7 +9,7 @@
 }
 
 .container {
-    max-width: 1300px;
+    max-width: 1320px;
     margin: 0 auto;
 }
 
@@ -29,4 +29,20 @@ h1 {
 }
 
 
+@media (max-width: 1400px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+
 @import './header';
+@import './promo';
+@import './forms';
+@import './buttons';
+@import './about';
+@import './subject';
+@import './modal';
+@import './use';
+@import './support';
+@import './phone';

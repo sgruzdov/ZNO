@@ -1,0 +1,21 @@
+.button {
+    cursor: pointer;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    transition: 0.3s ease box-shadow;
+    
+    &:hover {
+        // box-shadow: 0 0 30px red;
+        box-shadow: 1px 1px 10px 0 red;
+    }
+}
+
+.button_menu {
+    font-size: 16px;
+    height: auto;
+    padding: 10px 18px;
+}

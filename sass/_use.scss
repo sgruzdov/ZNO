@@ -1,0 +1,80 @@
+.use {
+    padding: 60px 0;
+
+    h1 {
+        margin-bottom: 100px;
+    }
+
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 100px 0 100px;
+
+        &_descr {
+            font-size: 20px;
+        }
+
+        &_number {
+            width: 100px;
+            height: 100px;
+            background-color: #00ffff;
+            box-shadow: 0 0 50px #00ffff;
+            border-radius: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+            text-transform: uppercase;
+        }
+
+        &_round {
+            width: 120px;
+            height: 120px;
+            border-radius: 100%;
+            background-color: #ee82ee;
+            box-shadow: 0 0 40px #ee82ee;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    &__first {
+        width: 100%;
+
+        &_item {
+            border-radius: 40px 0 0 40px;
+            height: 133px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &:nth-child(2n-1) {
+                background-color: yellow;
+            }
+
+            &:nth-child(2n) {
+                background-color: #f9f7f7;
+            }
+        }
+    }
+    &__second {
+        width: 100%;
+
+        &_item {
+            border-radius: 0 40px 40px 0;
+            height: 133px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &:nth-child(2n) {
+                background-color: #29b2e6;
+            }
+            
+            &:nth-child(2n-1) {
+                background-color: #f9f7f7;
+            }
+        }
+    }
+}

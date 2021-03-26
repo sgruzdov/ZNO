@@ -1,0 +1,117 @@
+.promo {
+    padding: 150px 0;
+    min-height: 400px;
+    background: url('../../img/background/new-bac.jpeg') center (center / cover) no-repeat;
+    color: white;
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, .6);
+    }
+
+    .container {
+        position: relative;
+        z-index: 1;
+    }
+
+    &_text {
+        width: 685px;
+    }
+
+    &__header {
+        text-align: left;
+        font-size: 40px;
+        font-weight: 700;
+        color: #29b2e6;
+
+        span {
+            color: #ffdb2f;
+            text-shadow: 0 0 30px #ffdb2f;
+        }
+    }
+
+    &_list {
+        display: flex;
+        justify-content: space-between;
+        font-size: 23px;
+        padding-top: 30px;
+    }
+
+    &_list-first {
+        width: 280px;
+
+        li {
+            padding-bottom: 40px;
+        }
+
+        li:first-child {
+            color: #ffdb2f;
+            span {
+                color: white;
+            }
+        }
+
+        li:last-child {
+            color: #29b2e6;
+            span {
+                color: white;
+            }
+        }
+    }
+
+    &_list-second {
+        width: 280px;
+        padding-right: 40px;
+
+        li {
+            padding-bottom: 40px;
+        }
+
+        li:first-child {
+            color: #29b2e6;
+            span {
+                color: white;
+            }
+        }
+
+        li:last-child {
+            color: #ffdb2f;
+            span {
+                color: white;
+            }
+        }
+    }
+
+    &_main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__form {
+        // padding-top: 152px;
+
+        &_descr {
+            text-align: center;
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .button_submit {
+            margin-bottom: 15px;
+        }
+
+        &_left {
+
+            span {
+                margin-left: 8px;
+            }
+        }
+    }
+}

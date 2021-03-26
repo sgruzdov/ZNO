@@ -1,0 +1,47 @@
+header {
+    position: relative;
+    height: 50px;
+}
+
+nav {
+    background-color: #212121;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    z-index: 5;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    list-style-type: none;
+    color: white;
+    padding: 13px 70px;
+}
+
+.subheader {
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    background-color: rgba(199, 241, 12, 0.6);
+
+    &_offer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100px;
+    }
+
+    img {
+        width: 200px;
+        height: 100px;
+    }
+    
+    &_btn {
+        height: 60px;
+        width: 200px;
+        background-color: red;
+    }
+}
